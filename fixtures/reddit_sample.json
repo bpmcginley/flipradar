@@ -1,0 +1,47 @@
+[
+  {
+    "source": "reddit",
+    "source_id": "fixt01",
+    "url": "https://www.reddit.com/r/SaaSforSale/comments/fixt01/selling_my_invoice_reminder_saas_200_mrr/",
+    "title": "Selling my invoice reminder SaaS - $200 MRR, asking $1,500",
+    "description": "Built with Python/Flask + Stripe. 34 paying customers on a $6/mo plan, $200 MRR. I run it in about 2 hrs/week but I'm starting a new job and can't keep up. Asking $1,500 OBO. Includes domain, codebase, customer list, and a 30-day handover.",
+    "asking_price": 1500,
+    "mrr": 200,
+    "arr": 2400,
+    "annual_profit": 2100,
+    "tech_stack": "python, flask, stripe",
+    "age_months": 18,
+    "users_count": 34,
+    "raw_json": {"subreddit": "SaaSforSale", "author": "indiedev_sam", "num_comments": 12, "score": 41}
+  },
+  {
+    "source": "reddit",
+    "source_id": "fixt02",
+    "url": "https://www.reddit.com/r/SideProject/comments/fixt02/my_chrome_extension_for_sale_4k_users/",
+    "title": "My Chrome extension is for sale - 4,000 users, no time to maintain",
+    "description": "Tab manager extension with 4,000 weekly active users and a 4.6 star rating. Free right now but obvious upsell path (pro tier was half built). Plain JavaScript, no backend to run. Selling for $600 because I'm focusing on my main startup. First come first served.",
+    "asking_price": 600,
+    "mrr": null,
+    "arr": null,
+    "annual_profit": null,
+    "tech_stack": "javascript, chrome extension",
+    "age_months": 26,
+    "users_count": 4000,
+    "raw_json": {"subreddit": "SideProject", "author": "tabwrangler", "num_comments": 27, "score": 88}
+  },
+  {
+    "source": "reddit",
+    "source_id": "fixt03",
+    "url": "https://www.reddit.com/r/SaaSforSale/comments/fixt03/newsletter_analytics_tool_mrr_95_neglected/",
+    "title": "Newsletter analytics tool, MRR $95, neglected for 6 months - 1.8k asking",
+    "description": "Tracks open/click rates across Substack and Beehiiv for indie writers. MRR $95 from 19 subscribers, hasn't been touched in 6 months but revenue is stable. Rust backend + small React dashboard, runs on a $5 VPS. Asking 1.8k. Great for someone who can add features the users keep emailing me about.",
+    "asking_price": 1800,
+    "mrr": 95,
+    "arr": 1140,
+    "annual_profit": 1080,
+    "tech_stack": "rust, react",
+    "age_months": 14,
+    "users_count": 19,
+    "raw_json": {"subreddit": "SaaSforSale", "author": "quietbuilder", "num_comments": 6, "score": 19}
+  }
+]

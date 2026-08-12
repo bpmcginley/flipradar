@@ -1,0 +1,47 @@
+[
+  {
+    "source": "tinyacquisitions",
+    "source_id": "snipreply-email-templates",
+    "url": "https://tinyacquisitions.com/listing/snipreply-email-templates",
+    "title": "SnipReply - canned email templates for support teams",
+    "description": "Chrome extension + small Flask backend that lets support agents insert canned replies in Gmail. 480 installs, 62 paying at $3/mo. Founder moved on to a new job and has not touched it in 6 months. Clean codebase, Stripe billing already wired up.",
+    "asking_price": 1500.0,
+    "mrr": 186.0,
+    "arr": 2232.0,
+    "annual_profit": 1900.0,
+    "tech_stack": "Python, Flask, JavaScript, Chrome Extension, Stripe",
+    "age_months": 22.0,
+    "users_count": 480,
+    "raw_json": "{\"fixture\": true, \"listed\": \"2026-07-14\", \"seller\": \"solo founder\"}"
+  },
+  {
+    "source": "tinyacquisitions",
+    "source_id": "pocketokr",
+    "url": "https://tinyacquisitions.com/listing/pocketokr",
+    "title": "PocketOKR - lightweight OKR tracker for tiny teams",
+    "description": "Rails-free! A C# / ASP.NET Minimal API + vanilla JS OKR tracker. 1,100 free users, 14 teams on the $9/mo plan. Organic SEO traffic from 'simple okr tool' keywords. Roughly 2 hrs/wk of support email. Selling because owner is consolidating products.",
+    "asking_price": 1900.0,
+    "mrr": 126.0,
+    "arr": 1512.0,
+    "annual_profit": 1300.0,
+    "tech_stack": "C#, ASP.NET, SQLite, JavaScript",
+    "age_months": 30.0,
+    "users_count": 1100,
+    "raw_json": "{\"fixture\": true, \"listed\": \"2026-07-30\", \"churn\": \"3%/mo\"}"
+  },
+  {
+    "source": "tinyacquisitions",
+    "source_id": "feedstitch",
+    "url": "https://tinyacquisitions.com/listing/feedstitch",
+    "title": "FeedStitch - merge RSS feeds into one clean digest",
+    "description": "Rust (Axum) service that merges multiple RSS/Atom feeds and emails a daily digest. Pre-revenue but 2,300 registered users and 9k monthly visits from a single viral HN post. Costs $6/mo to run on a VPS. Seller wants a quick no-earn-out exit.",
+    "asking_price": 650.0,
+    "mrr": 0.0,
+    "arr": 0.0,
+    "annual_profit": -72.0,
+    "tech_stack": "Rust, Axum, PostgreSQL",
+    "age_months": 11.0,
+    "users_count": 2300,
+    "raw_json": "{\"fixture\": true, \"listed\": \"2026-08-02\", \"traffic\": \"9k visits/mo\"}"
+  }
+]

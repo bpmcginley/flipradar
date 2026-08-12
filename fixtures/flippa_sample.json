@@ -1,0 +1,47 @@
+[
+  {
+    "source": "flippa",
+    "source_id": "13600001",
+    "url": "https://flippa.com/13600001-invoicepilot-micro-saas-for-freelancer-invoicing",
+    "title": "InvoicePilot - micro-SaaS for freelancer invoicing with 210 free users and 14 paying",
+    "description": "InvoicePilot is a Django + Stripe invoicing tool for freelancers. 14 paying subscribers at $9/mo, 210 free accounts, organic traffic from two blog posts that rank. Owner spends ~2 hrs/week on support. Selling due to focus on a new venture. Includes domain, codebase, Stripe account handover, and 30 days of transition support.",
+    "asking_price": 1500.0,
+    "mrr": 126.0,
+    "arr": 1512.0,
+    "annual_profit": 1230.0,
+    "tech_stack": "Python, Django, Stripe, Postgres",
+    "age_months": 19.0,
+    "users_count": 224,
+    "raw_json": "{\"id\": \"13600001\", \"property_type\": \"saas\", \"sale_method\": \"classified\", \"status\": \"open\", \"display_price\": 1500, \"revenue_per_month\": 126, \"profit_per_month\": 102, \"has_verified_revenue\": true, \"seller_location\": \"United States\", \"fixture\": true}"
+  },
+  {
+    "source": "flippa",
+    "source_id": "13600002",
+    "url": "https://flippa.com/13600002-tabsnooze-chrome-extension-saas-tab-manager",
+    "title": "TabSnooze - Chrome extension SaaS with 5,800 weekly active users, pre-revenue",
+    "description": "TabSnooze is a tab-management Chrome extension (JavaScript/TypeScript, Firebase backend) with 5,800 WAU and a 4.6-star rating. Pre-revenue but has a built-in paywall ready to flip on ($2.99/mo pro tier). Near-zero running costs (~$8/mo Firebase). Neglected for 8 months; users still growing organically from the Chrome Web Store.",
+    "asking_price": 900.0,
+    "mrr": 0.0,
+    "arr": 0.0,
+    "annual_profit": -96.0,
+    "tech_stack": "TypeScript, Chrome Extension, Firebase",
+    "age_months": 26.0,
+    "users_count": 5800,
+    "raw_json": "{\"id\": \"13600002\", \"property_type\": \"saas\", \"sale_method\": \"auction\", \"status\": \"open\", \"display_price\": 900, \"revenue_per_month\": 0, \"profit_per_month\": -8, \"has_verified_traffic\": true, \"seller_location\": \"Germany\", \"fixture\": true}"
+  },
+  {
+    "source": "flippa",
+    "source_id": "13600003",
+    "url": "https://flippa.com/13600003-uptimeping-server-monitoring-saas",
+    "title": "UptimePing - server monitoring SaaS, $310 MRR, runs itself",
+    "description": "UptimePing monitors websites and pings owners on Slack/email when they go down. Rust backend on a single $20/mo VPS, React dashboard. 47 paying customers ($5-$15 plans), $310 MRR, 2% monthly churn. Fully automated onboarding and billing; owner spends under 1 hr/week. Priced at ~1.2x annual profit for a fast sale before a career move.",
+    "asking_price": 4200.0,
+    "mrr": 310.0,
+    "arr": 3720.0,
+    "annual_profit": 3480.0,
+    "tech_stack": "Rust, React, Stripe",
+    "age_months": 41.0,
+    "users_count": 47,
+    "raw_json": "{\"id\": \"13600003\", \"property_type\": \"saas\", \"sale_method\": \"classified\", \"status\": \"open\", \"display_price\": 4200, \"revenue_per_month\": 310, \"profit_per_month\": 290, \"has_verified_revenue\": true, \"seller_location\": \"Canada\", \"fixture\": true}"
+  }
+]

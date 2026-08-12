@@ -1,0 +1,47 @@
+[
+  {
+    "source": "microns",
+    "source_id": "ai-resume-feedback-tool",
+    "url": "https://www.microns.io/startup-listings/ai-resume-feedback-tool",
+    "title": "AI Resume Feedback Tool",
+    "description": "Web app giving instant AI-powered resume critiques for job seekers, monetized with one-time credit packs",
+    "asking_price": 1500.0,
+    "mrr": 95.0,
+    "arr": 1140.0,
+    "annual_profit": null,
+    "tech_stack": "Python, Flask, OpenAI API",
+    "age_months": 14.0,
+    "users_count": 820,
+    "raw_json": "{\"category\": \"AI\"}"
+  },
+  {
+    "source": "microns",
+    "source_id": "habit-tracker-chrome-extension",
+    "url": "https://www.microns.io/startup-listings/habit-tracker-chrome-extension",
+    "title": "Habit Tracker Chrome Extension",
+    "description": "Minimalist new-tab habit tracker with 4k weekly active users and a small Pro subscription tier",
+    "asking_price": 900.0,
+    "mrr": 40.0,
+    "arr": 480.0,
+    "annual_profit": 430.0,
+    "tech_stack": "JavaScript, Chrome Extension APIs",
+    "age_months": 22.0,
+    "users_count": 4000,
+    "raw_json": "{\"category\": \"Productivity\"}"
+  },
+  {
+    "source": "microns",
+    "source_id": "niche-job-board-remote-qa",
+    "url": "https://www.microns.io/startup-listings/niche-job-board-remote-qa",
+    "title": "Niche Job Board for Remote QA Engineers",
+    "description": "Curated job board with paid listings from bootstrapped SaaS companies; runs itself on an Airtable backend",
+    "asking_price": 1950.0,
+    "mrr": 120.0,
+    "arr": 1440.0,
+    "annual_profit": 1300.0,
+    "tech_stack": "Webflow, Airtable, Zapier",
+    "age_months": 18.0,
+    "users_count": 2600,
+    "raw_json": "{\"category\": \"Job Board\"}"
+  }
+]

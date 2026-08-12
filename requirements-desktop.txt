@@ -1,0 +1,2 @@
+# Desktop wrapper only (desktop.py). Not needed for CLI/web usage.
+pywebview>=5.0

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DD checklist – {{ listing.title or "listing " ~ listing.id }}</title>
+<style>
+  :root { --bg:#12151a; --panel:#1a1f27; --border:#2a323d; --text:#d7dde5; --muted:#8b96a5; --accent:#4fc3f7; }
+  body { margin:0; padding:1.5rem; background:var(--bg); color:var(--text);
+         font:14px/1.6 "Segoe UI", system-ui, sans-serif; max-width: 52rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  h1 { font-size: 1.2rem; margin: 0 0 .25rem; }
+  .meta { color: var(--muted); margin-bottom: 1rem; font-size: .85rem; }
+  pre { white-space: pre-wrap; background: var(--panel); border: 1px solid var(--border);
+        border-radius: 8px; padding: 1rem; }
+</style>
+</head>
+<body>
+  <p><a href="/">&larr; back to dashboard</a></p>
+  <h1>Due-diligence checklist: {{ listing.title or "(untitled)" }}</h1>
+  <p class="meta">
+    {{ listing.source }} ·
+    {% if listing.asking_price is not none %}asking ${{ "{:,.0f}".format(listing.asking_price) }} ·{% endif %}
+    {% if listing.url %}<a href="{{ listing.url }}" target="_blank" rel="noopener noreferrer">original listing</a>{% endif %}
+  </p>
+  <pre>{{ body }}</pre>
+</body>
+</html>

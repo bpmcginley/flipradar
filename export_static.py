@@ -1,0 +1,342 @@
+"""FlipRadar static-site exporter.
+
+Writes a self-contained dashboard (docs/index.html + docs/data.json) suitable
+for GitHub Pages hosting. Run via `python export_static.py` or
+`python cli.py export`.
+
+data.json carries only summary fields per listing (descriptions truncated,
+no raw_json) -- the page links out to the original listing rather than
+republishing full seller text.
+"""
+
+from __future__ import annotations
+
+import json
+import logging
+import os
+from datetime import datetime, timezone
+
+import db
+
+log = logging.getLogger("flipradar.export_static")
+
+MIN_SCORE = 30.0
+DESCRIPTION_MAX_CHARS = 200
+
+# Fields copied into data.json (description handled separately for truncation).
+EXPORT_FIELDS = [
+    "title",
+    "url",
+    "source",
+    "asking_price",
+    "mrr",
+    "arr",
+    "annual_profit",
+    "score",
+    "score_reasons",
+    "verified_revenue",
+    "sale_method",
+    "first_seen",
+    "tech_stack",
+]
+
+
+def _truncate(text: str | None, limit: int = DESCRIPTION_MAX_CHARS) -> str | None:
+    if text is None:
+        return None
+    text = " ".join(text.split())  # collapse whitespace/newlines
+    if len(text) <= limit:
+        return text
+    return text[: limit - 1].rstrip() + "\u2026"
+
+
+def export(out_dir: str = "docs") -> dict:
+    """Export qualifying listings to <out_dir>/data.json + index.html.
+
+    Includes all non-sold listings with score >= MIN_SCORE. Returns a small
+    summary dict {count, out_dir}.
+    """
+    rows = db.get_listings(
+        filters={"min_score": MIN_SCORE, "exclude_sold": True},
+        order_by="score DESC",
+    )
+    listings = []
+    for r in rows:
+        item = {f: r.get(f) for f in EXPORT_FIELDS}
+        item["description"] = _truncate(r.get("description"))
+        listings.append(item)
+
+    payload = {
+        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "min_score": MIN_SCORE,
+        "count": len(listings),
+        "sources": sorted({l["source"] for l in listings if l.get("source")}),
+        "listings": listings,
+    }
+
+    os.makedirs(out_dir, exist_ok=True)
+    data_path = os.path.join(out_dir, "data.json")
+    with open(data_path, "w", encoding="utf-8") as fh:
+        json.dump(payload, fh, ensure_ascii=False, indent=1)
+    html_path = os.path.join(out_dir, "index.html")
+    with open(html_path, "w", encoding="utf-8") as fh:
+        fh.write(INDEX_HTML)
+
+    log.info("exported %d listings to %s", len(listings), out_dir)
+    return {"count": len(listings), "out_dir": out_dir}
+
+
+# Fully self-contained page: inline CSS + JS, no CDNs. Loads ./data.json.
+INDEX_HTML = """<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FlipRadar</title>
+<style>
+  :root {
+    --bg: #12151a; --panel: #1a1f27; --border: #2a323d;
+    --text: #d7dde5; --muted: #8b96a5; --accent: #4fc3f7;
+    --good: #6fdd8b; --warn: #f0c674;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 1.5rem; background: var(--bg); color: var(--text);
+    font: 14px/1.5 "Segoe UI", system-ui, sans-serif;
+  }
+  h1 { margin: 0 0 .25rem; font-size: 1.4rem; }
+  h1 .tag { color: var(--muted); font-size: .8rem; font-weight: normal; }
+  .summary { display: flex; gap: 1rem; margin: 1rem 0; flex-wrap: wrap; }
+  .stat {
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 8px; padding: .6rem 1rem; min-width: 9rem;
+  }
+  .stat .label { color: var(--muted); font-size: .75rem; text-transform: uppercase; letter-spacing: .05em; }
+  .stat .value { font-size: 1.3rem; font-weight: 600; }
+  form.filters {
+    display: flex; gap: .75rem; align-items: flex-end; flex-wrap: wrap;
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 8px; padding: .75rem 1rem; margin-bottom: 1rem;
+  }
+  form.filters label { display: block; color: var(--muted); font-size: .75rem; margin-bottom: .2rem; }
+  form.filters input[type=number], form.filters select {
+    background: var(--bg); color: var(--text); border: 1px solid var(--border);
+    border-radius: 5px; padding: .35rem .5rem; width: 8rem;
+  }
+  form.filters .check { display: flex; align-items: center; gap: .4rem; padding-bottom: .35rem; }
+  form.filters a.reset { color: var(--muted); font-size: .8rem; padding-bottom: .4rem; cursor: pointer; }
+  table { width: 100%; border-collapse: collapse; background: var(--panel);
+          border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  th, td { padding: .5rem .7rem; text-align: left; border-bottom: 1px solid var(--border); }
+  th { color: var(--muted); font-size: .75rem; text-transform: uppercase; letter-spacing: .05em;
+       cursor: pointer; user-select: none; white-space: nowrap; }
+  th .arrow { color: var(--accent); }
+  tr:last-child td { border-bottom: 0; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .score { font-weight: 700; color: var(--good); }
+  .score.na { color: var(--muted); font-weight: normal; }
+  .src { color: var(--muted); font-size: .85em; }
+  .desc { color: var(--muted); font-size: .8rem; margin-top: .15rem; max-width: 42rem; }
+  .badge {
+    display: inline-block; font-size: .7rem; border: 1px solid var(--good);
+    color: var(--good); border-radius: 4px; padding: 0 .3rem; margin-left: .35rem;
+  }
+  details.reasons { margin-top: .25rem; }
+  details.reasons summary { cursor: pointer; color: var(--muted); font-size: .8rem; }
+  details.reasons pre {
+    white-space: pre-wrap; margin: .3rem 0 0; padding: .5rem;
+    background: var(--bg); border: 1px solid var(--border); border-radius: 5px;
+    font-size: .8rem; color: var(--warn);
+  }
+  .empty { color: var(--muted); padding: 2rem; text-align: center; }
+  .error { color: #f28b82; margin: .5rem 0; }
+  footer { color: var(--muted); font-size: .78rem; margin-top: 1.25rem; line-height: 1.6; }
+</style>
+</head>
+<body>
+  <h1>FlipRadar <span class="tag">micro-SaaS deal radar &middot; static export</span></h1>
+
+  <div class="summary">
+    <div class="stat"><div class="label">Listings</div><div class="value" id="stat-count">&ndash;</div></div>
+    <div class="stat"><div class="label">Top score</div><div class="value" id="stat-top">&ndash;</div></div>
+    <div class="stat"><div class="label">Last updated</div><div class="value" id="stat-updated" style="font-size:.95rem">&ndash;</div></div>
+  </div>
+
+  <form class="filters" onsubmit="return false">
+    <div>
+      <label for="max_price">Max price ($)</label>
+      <input type="number" id="max_price" step="any" min="0">
+    </div>
+    <div>
+      <label for="min_score">Min score</label>
+      <input type="number" id="min_score" step="any">
+    </div>
+    <div>
+      <label for="source">Source</label>
+      <select id="source"><option value="">All sources</option></select>
+    </div>
+    <div class="check">
+      <input type="checkbox" id="revenue_positive">
+      <label for="revenue_positive" style="margin:0">Revenue-positive only</label>
+    </div>
+    <div class="check">
+      <input type="checkbox" id="verified_only">
+      <label for="verified_only" style="margin:0">Verified revenue only</label>
+    </div>
+    <a class="reset" id="reset">reset</a>
+  </form>
+
+  <p class="error" id="load-error" hidden>Could not load data.json &mdash; if opening this file directly, serve the folder over HTTP instead.</p>
+  <table id="deal-table" hidden>
+    <thead><tr id="head-row"></tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+  <p class="empty" id="empty" hidden>No listings match the current filters.</p>
+
+  <footer>
+    Data aggregated from public listings on Reddit, Flippa, Microns, and SideProjectors;
+    scores are FlipRadar's own heuristic. Descriptions are truncated &mdash; follow the link
+    for the full listing on the original marketplace.<br>
+    This is automated deal research, not financial advice. Verify all numbers independently
+    before contacting a seller.
+  </footer>
+
+<script>
+"use strict";
+const COLS = [
+  { key: "score",         label: "Score",     num: true },
+  { key: "title",         label: "Listing" },
+  { key: "source",        label: "Source" },
+  { key: "asking_price",  label: "Asking",    num: true },
+  { key: "mrr",           label: "MRR",       num: true },
+  { key: "annual_profit", label: "Profit/yr", num: true },
+  { key: "tech_stack",    label: "Tech" },
+  { key: "first_seen",    label: "First seen" },
+];
+let DATA = null;
+let sortKey = "score", sortDir = -1;
+
+const $ = (id) => document.getElementById(id);
+const money = (v) => v == null ? "\\u2013" : "$" + Math.round(v).toLocaleString("en-US");
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({
+  "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+function revenuePositive(r) {
+  return [r.mrr, r.arr, r.annual_profit].some((v) => v != null && v > 0);
+}
+
+function filtered() {
+  const maxPrice = parseFloat($("max_price").value);
+  const minScore = parseFloat($("min_score").value);
+  const source = $("source").value;
+  const revOnly = $("revenue_positive").checked;
+  const verOnly = $("verified_only").checked;
+  return DATA.listings.filter((r) =>
+    (isNaN(maxPrice) || (r.asking_price != null && r.asking_price <= maxPrice)) &&
+    (isNaN(minScore) || (r.score != null && r.score >= minScore)) &&
+    (!source || r.source === source) &&
+    (!revOnly || revenuePositive(r)) &&
+    (!verOnly || r.verified_revenue === 1));
+}
+
+function cmp(a, b) {
+  const va = a[sortKey], vb = b[sortKey];
+  if (va == null && vb == null) return 0;
+  if (va == null) return 1;            // nulls last regardless of direction
+  if (vb == null) return -1;
+  const r = typeof va === "number" && typeof vb === "number"
+    ? va - vb
+    : String(va).localeCompare(String(vb), undefined, { sensitivity: "base" });
+  return r * sortDir;
+}
+
+function renderHead() {
+  $("head-row").innerHTML = COLS.map((c) => {
+    const arrow = c.key === sortKey ? ` <span class="arrow">${sortDir < 0 ? "\\u25BC" : "\\u25B2"}</span>` : "";
+    return `<th data-key="${c.key}"${c.num ? ' class="num"' : ""}>${c.label}${arrow}</th>`;
+  }).join("");
+}
+
+function rowHtml(r) {
+  const score = r.score == null
+    ? '<span class="score na">\\u2013</span>'
+    : `<span class="score">${r.score.toFixed(1)}</span>`;
+  const title = esc(r.title || "(untitled)");
+  const link = r.url
+    ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${title}</a>`
+    : title;
+  const badge = r.verified_revenue === 1 ? '<span class="badge">verified rev</span>' : "";
+  const desc = r.description && r.description !== r.title
+    ? `<div class="desc">${esc(r.description)}</div>` : "";
+  const reasons = r.score_reasons
+    ? `<details class="reasons"><summary>score reasons</summary><pre>${esc(r.score_reasons)}</pre></details>`
+    : "";
+  const src = esc(r.source || "") + (r.sale_method ? ` <span class="src">(${esc(r.sale_method)})</span>` : "");
+  const seen = r.first_seen ? esc(r.first_seen.slice(0, 10)) : "\\u2013";
+  return `<tr>
+    <td class="num">${score}</td>
+    <td>${link}${badge}${desc}${reasons}</td>
+    <td class="src">${src}</td>
+    <td class="num">${r.asking_price == null ? "?" : money(r.asking_price)}</td>
+    <td class="num">${money(r.mrr)}</td>
+    <td class="num">${money(r.annual_profit)}</td>
+    <td>${esc(r.tech_stack || "\\u2013")}</td>
+    <td class="src">${seen}</td>
+  </tr>`;
+}
+
+function render() {
+  const rows = filtered().sort(cmp);
+  renderHead();
+  $("rows").innerHTML = rows.map(rowHtml).join("");
+  $("deal-table").hidden = rows.length === 0;
+  $("empty").hidden = rows.length !== 0;
+  $("stat-count").textContent = `${rows.length} / ${DATA.count}`;
+}
+
+function init(data) {
+  DATA = data;
+  const scores = data.listings.map((r) => r.score).filter((s) => s != null);
+  $("stat-top").textContent = scores.length ? Math.max(...scores).toFixed(1) : "\\u2013";
+  $("stat-updated").textContent = data.generated_at
+    ? new Date(data.generated_at).toLocaleString() : "\\u2013";
+  const sel = $("source");
+  for (const s of data.sources || []) {
+    const opt = document.createElement("option");
+    opt.value = s; opt.textContent = s;
+    sel.appendChild(opt);
+  }
+  for (const id of ["max_price", "min_score", "source", "revenue_positive", "verified_only"])
+    $(id).addEventListener("input", render);
+  $("reset").addEventListener("click", () => {
+    $("max_price").value = ""; $("min_score").value = ""; $("source").value = "";
+    $("revenue_positive").checked = false; $("verified_only").checked = false;
+    render();
+  });
+  document.querySelector("thead").addEventListener("click", (e) => {
+    const th = e.target.closest("th");
+    if (!th) return;
+    const key = th.dataset.key;
+    if (key === sortKey) sortDir = -sortDir;
+    else { sortKey = key; sortDir = key === "score" ? -1 : 1; }
+    render();
+  });
+  render();
+}
+
+fetch("data.json")
+  .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(init)
+  .catch(() => { $("load-error").hidden = false; });
+</script>
+</body>
+</html>
+"""
+
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
+    summary = export()
+    print(f"export complete: {summary}")

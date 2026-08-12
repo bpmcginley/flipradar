@@ -1,0 +1,1 @@
+"""FlipRadar web dashboard package."""

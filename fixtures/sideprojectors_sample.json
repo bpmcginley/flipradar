@@ -1,0 +1,47 @@
+[
+  {
+    "source": "sideprojectors",
+    "source_id": "31842",
+    "url": "https://www.sideprojectors.com/project/31842/quicklinks-bio-page-builder",
+    "title": "QuickLinks - link-in-bio page builder",
+    "description": "Simple Linktree alternative built with Flask + Tailwind. 850 registered creators, 23 on the $2/mo pro tier. Runs on a single $5 VPS, fully automated signups and billing via Stripe. I have two kids now and zero time; priced to sell.",
+    "asking_price": 1200.0,
+    "mrr": 46.0,
+    "arr": 552.0,
+    "annual_profit": 480.0,
+    "tech_stack": "Python, Flask, Tailwind, Stripe, SQLite",
+    "age_months": 26.0,
+    "users_count": 850,
+    "raw_json": "{\"fixture\": true, \"listed\": \"2026-07-21\", \"offers\": 2}"
+  },
+  {
+    "source": "sideprojectors",
+    "source_id": "31967",
+    "url": "https://www.sideprojectors.com/project/31967/invoicefox-freelancer-invoicing",
+    "title": "InvoiceFox - dead-simple invoicing for freelancers",
+    "description": "Node/Express + React invoicing tool. 3,400 signups, ~200 monthly active, $95 MRR from a $5/mo plan. SEO brings 6k visits/mo for 'free invoice generator' queries. Needs maybe 3 hrs/wk. Selling because I got acquired-hired and can't run a paid product.",
+    "asking_price": 1800.0,
+    "mrr": 95.0,
+    "arr": 1140.0,
+    "annual_profit": 950.0,
+    "tech_stack": "JavaScript, Node, Express, React, PostgreSQL",
+    "age_months": 34.0,
+    "users_count": 3400,
+    "raw_json": "{\"fixture\": true, \"listed\": \"2026-08-05\", \"traffic\": \"6k visits/mo\"}"
+  },
+  {
+    "source": "sideprojectors",
+    "source_id": "32011",
+    "url": "https://www.sideprojectors.com/project/32011/wordhabit-daily-vocab-pwa",
+    "title": "WordHabit - daily vocabulary PWA with 12k installs",
+    "description": "Progressive web app teaching a word a day with spaced repetition. 12,000 installs, 1,900 DAU, no revenue yet but an obvious $1/mo premium path. Pure TypeScript + Svelte, static hosting, near-zero costs. Great fit for someone who wants users first, monetization second.",
+    "asking_price": 900.0,
+    "mrr": 0.0,
+    "arr": 0.0,
+    "annual_profit": 0.0,
+    "tech_stack": "TypeScript, Svelte, PWA, Cloudflare Pages",
+    "age_months": 15.0,
+    "users_count": 12000,
+    "raw_json": "{\"fixture\": true, \"listed\": \"2026-08-09\", \"dau\": 1900}"
+  }
+]

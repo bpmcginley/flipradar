@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FlipRadar – portfolio</title>
+<style>
+  :root {
+    --bg: #12151a; --panel: #1a1f27; --border: #2a323d;
+    --text: #d7dde5; --muted: #8b96a5; --accent: #4fc3f7;
+    --good: #6fdd8b; --warn: #f0c674; --bad: #f28b82;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 1.5rem; background: var(--bg); color: var(--text);
+    font: 14px/1.5 "Segoe UI", system-ui, sans-serif;
+  }
+  h1 { margin: 0 0 .25rem; font-size: 1.4rem; }
+  h1 .tag { color: var(--muted); font-size: .8rem; font-weight: normal; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  nav.tabs { display: flex; gap: 1rem; margin: .5rem 0 1rem; border-bottom: 1px solid var(--border); }
+  nav.tabs a { color: var(--muted); padding: .35rem .2rem; border-bottom: 2px solid transparent; }
+  nav.tabs a:hover { color: var(--text); text-decoration: none; }
+  nav.tabs a.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .summary { display: flex; gap: 1rem; margin: 1rem 0; flex-wrap: wrap; }
+  .stat {
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 8px; padding: .6rem 1rem; min-width: 9rem;
+  }
+  .stat .label { color: var(--muted); font-size: .75rem; text-transform: uppercase; letter-spacing: .05em; }
+  .stat .value { font-size: 1.3rem; font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; background: var(--panel);
+          border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  th, td { padding: .5rem .7rem; text-align: left; border-bottom: 1px solid var(--border); }
+  th { color: var(--muted); font-size: .75rem; text-transform: uppercase; letter-spacing: .05em; }
+  tr:last-child td { border-bottom: 0; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .up { color: var(--good); }
+  .down { color: var(--bad); }
+  .notes { color: var(--muted); font-size: .85em; max-width: 20rem; }
+  .repo { color: var(--muted); font-size: .8em; font-family: Consolas, monospace; }
+  .empty { color: var(--muted); padding: 2rem; text-align: center; }
+</style>
+</head>
+<body>
+  <h1>FlipRadar <span class="tag">portfolio · {{ assets|length }} assets</span></h1>
+  <nav class="tabs">
+    <a href="/">Deals</a>
+    <a href="/pipeline">Pipeline</a>
+    <a href="/portfolio" class="active">Portfolio</a>
+  </nav>
+
+  <div class="summary">
+    <div class="stat"><div class="label">Assets</div><div class="value">{{ assets|length }}</div></div>
+    <div class="stat"><div class="label">Total invested</div><div class="value">${{ "{:,.0f}".format(total_invested) }}</div></div>
+    <div class="stat"><div class="label">Current MRR</div><div class="value">${{ "{:,.0f}".format(total_mrr) }}</div></div>
+  </div>
+
+  {% if assets %}
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th class="num">Purchase price</th>
+        <th class="num">MRR at purchase</th>
+        <th class="num">MRR now</th>
+        <th class="num">Hours</th>
+        <th class="num">Months held</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for a in assets %}
+      <tr>
+        <td>
+          {{ a.name or "(unnamed)" }}
+          {% if a.repo_path %}<div class="repo">{{ a.repo_path }}</div>{% endif %}
+        </td>
+        <td class="num">{% if a.purchase_price is not none %}${{ "{:,.0f}".format(a.purchase_price) }}{% else %}–{% endif %}</td>
+        <td class="num">{% if a.mrr_at_purchase is not none %}${{ "{:,.0f}".format(a.mrr_at_purchase) }}{% else %}–{% endif %}</td>
+        <td class="num">
+          {% if a.mrr_current is not none %}
+          <span class="{% if a.mrr_at_purchase is not none and a.mrr_current > a.mrr_at_purchase %}up{% elif a.mrr_at_purchase is not none and a.mrr_current < a.mrr_at_purchase %}down{% endif %}">
+            ${{ "{:,.0f}".format(a.mrr_current) }}
+          </span>
+          {% else %}–{% endif %}
+        </td>
+        <td class="num">{{ "%g"|format(a.hours_invested) if a.hours_invested is not none else "–" }}</td>
+        <td class="num">{% if a.months_held is not none %}{{ "%.1f"|format(a.months_held) }}{% else %}–{% endif %}</td>
+        <td class="notes">{{ a.notes or "–" }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p class="empty">No assets yet. Acquisitions land here once a deal closes.</p>
+  {% endif %}
+</body>
+</html>

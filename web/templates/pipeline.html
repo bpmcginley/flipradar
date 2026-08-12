@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FlipRadar – pipeline</title>
+<style>
+  :root {
+    --bg: #12151a; --panel: #1a1f27; --border: #2a323d;
+    --text: #d7dde5; --muted: #8b96a5; --accent: #4fc3f7;
+    --good: #6fdd8b; --warn: #f0c674;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 1.5rem; background: var(--bg); color: var(--text);
+    font: 14px/1.5 "Segoe UI", system-ui, sans-serif;
+  }
+  h1 { margin: 0 0 .25rem; font-size: 1.4rem; }
+  h1 .tag { color: var(--muted); font-size: .8rem; font-weight: normal; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  nav.tabs { display: flex; gap: 1rem; margin: .5rem 0 1rem; border-bottom: 1px solid var(--border); }
+  nav.tabs a { color: var(--muted); padding: .35rem .2rem; border-bottom: 2px solid transparent; }
+  nav.tabs a:hover { color: var(--text); text-decoration: none; }
+  nav.tabs a.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .board {
+    display: grid; grid-template-columns: repeat(6, minmax(11rem, 1fr));
+    gap: .75rem; overflow-x: auto;
+  }
+  .col {
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 8px; padding: .6rem; min-height: 10rem;
+  }
+  .col h2 {
+    margin: 0 0 .6rem; font-size: .75rem; text-transform: uppercase;
+    letter-spacing: .05em; color: var(--muted);
+  }
+  .col h2 .count { color: var(--text); }
+  .card {
+    background: var(--bg); border: 1px solid var(--border); border-radius: 6px;
+    padding: .5rem .6rem; margin-bottom: .5rem;
+  }
+  .card .title { font-weight: 600; margin-bottom: .15rem; }
+  .card .meta { color: var(--muted); font-size: .75rem; margin-bottom: .35rem; }
+  .card .notes {
+    color: var(--warn); font-size: .75rem; white-space: pre-wrap;
+    margin: .25rem 0 .35rem;
+  }
+  .card select {
+    background: var(--panel); color: var(--text); border: 1px solid var(--border);
+    border-radius: 5px; padding: .2rem .3rem; font-size: .75rem; width: 100%;
+  }
+  .empty-col { color: var(--muted); font-size: .8rem; }
+  .empty { color: var(--muted); padding: 2rem; text-align: center; }
+</style>
+</head>
+<body>
+  <h1>FlipRadar <span class="tag">deal pipeline · {{ total }} tracked</span></h1>
+  <nav class="tabs">
+    <a href="/">Deals</a>
+    <a href="/pipeline" class="active">Pipeline</a>
+    <a href="/portfolio">Portfolio</a>
+  </nav>
+
+  {% if total %}
+  <div class="board">
+    {% for status in statuses %}
+    <div class="col">
+      <h2>{{ status }} <span class="count">({{ columns[status]|length }})</span></h2>
+      {% for card in columns[status] %}
+      <div class="card">
+        <div class="title">
+          {% if card.url %}<a href="{{ card.url }}" target="_blank" rel="noopener noreferrer">{{ card.title or "(untitled)" }}</a>
+          {% else %}{{ card.title or "(untitled)" }}{% endif %}
+        </div>
+        <div class="meta">
+          {{ card.source }}
+          {% if card.asking_price is not none %} · ${{ "{:,.0f}".format(card.asking_price) }}{% endif %}
+          {% if card.mrr is not none %} · ${{ "{:,.0f}".format(card.mrr) }}/mo{% endif %}
+          {% if card.score is not none %} · score {{ "%.1f"|format(card.score) }}{% endif %}
+          · <a href="/dd/{{ card.listing_id }}">DD</a>
+        </div>
+        {% if card.notes %}<div class="notes">{{ card.notes }}</div>{% endif %}
+        <form method="post" action="/pipeline/set">
+          <input type="hidden" name="listing_id" value="{{ card.listing_id }}">
+          <input type="hidden" name="next" value="/pipeline">
+          <select name="status" onchange="this.form.submit()">
+            {% for s in statuses %}
+            <option value="{{ s }}" {% if s == card.status %}selected{% endif %}>{{ s }}</option>
+            {% endfor %}
+          </select>
+        </form>
+      </div>
+      {% else %}
+      <p class="empty-col">–</p>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="empty">Nothing in the pipeline yet. Add a deal from the <a href="/">dashboard</a>.</p>
+  {% endif %}
+</body>
+</html>
