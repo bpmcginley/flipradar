@@ -1,24 +1,25 @@
 {
- "generated_at": "2026-08-17T02:15:14+00:00",
+ "generated_at": "2026-08-17T13:44:15+00:00",
  "min_score": 30.0,
- "count": 72,
+ "count": 74,
  "sources": [
-  "flippa"
+  "flippa",
+  "microns"
  ],
  "listings": [
   {
    "title": "AI video SaaS with a Claude MCP integration, $9.3K CAD revenue, 10K emails, 4 viral organic social accounts.",
    "url": "https://flippa.com/13709132-ai-video-saas-with-a-claude-mcp-integration-9-3k-cad-revenue-10k-emails-4-viral-organic-social-accounts",
    "source": "flippa",
-   "asking_price": 1530.0,
+   "asking_price": 1580.0,
    "mrr": 938.0,
    "arr": 11256.0,
    "annual_profit": 1080.0,
    "score": 54.0,
-   "score_reasons": "within $2,000 budget (+25); underpriced: 1.4x profit vs ~1.7x sub-$100k average (+22); revenue-positive: $938 MRR, $1,080/yr profit (+15); revenue claimed but NOT platform-verified (-8)",
+   "score_reasons": "within $2,000 budget (+25); underpriced: 1.5x profit vs ~1.7x sub-$100k average (+22); revenue-positive: $938 MRR, $1,080/yr profit (+15); revenue claimed but NOT platform-verified (-8)",
    "verified_revenue": 0,
    "sale_method": "auction",
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "AI video SaaS with a Claude MCP integration, $9.3K CAD revenue, 10K emails, 4 viral organic social accounts."
   },
@@ -34,7 +35,7 @@
    "score_reasons": "within $2,000 budget (+25); underpriced: 1.4x profit vs ~1.7x sub-$100k average (+22); revenue-positive: $58 MRR, $696/yr profit (+15); revenue claimed but NOT platform-verified (-8)",
    "verified_revenue": 0,
    "sale_method": "classified",
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "My Entire portfolio is for sell at discounted price"
   },
@@ -50,7 +51,7 @@
    "score_reasons": "within $2,000 budget (+25); priced in 2.5-4.0x resale range: 2.7x (+6); revenue-positive: $23 MRR, $276/yr profit (+15); platform-verified revenue (+8)",
    "verified_revenue": 1,
    "sale_method": "auction",
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Offers free game codes and deals by aggregating promotions and discounts from various platforms, helping gamers access free content."
   },
@@ -66,7 +67,7 @@
    "score_reasons": "within $2,000 budget (+25); underpriced: 1.4x profit vs ~1.7x sub-$100k average (+22); revenue-positive: $116 MRR, $1,392/yr profit (+15); revenue claimed but NOT platform-verified (-8)",
    "verified_revenue": 0,
    "sale_method": "classified",
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Two-sided casting marketplace for vertical drama. 1,129 users, 25 studios, 1,980+ applications. Live Pro subscriptions. Custom-built, solo-founder run."
   },
@@ -82,7 +83,7 @@
    "score_reasons": "within $2,000 budget (+25); expensive: 83.3x profit, above resale range (-5); revenue-positive: $2 MRR, $24/yr profit (+15); tech match (C#) (+6); platform-verified revenue (+8)",
    "verified_revenue": 1,
    "sale_method": "auction",
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "goconvert.net A website featuring over 500 tools to convert all types of files including PDF, audio, video, and mobile formats—and available in 11 languages."
   },
@@ -98,7 +99,7 @@
    "score_reasons": "within $2,000 budget (+25); very cheap: 0.5x annual profit — plausible only for distressed sales, verify revenue hard (+15); revenue-positive: $25 MRR, $276/yr profit (+15); revenue claimed but NOT platform-verified (-8)",
    "verified_revenue": 0,
    "sale_method": "auction",
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Linkcutt.online - Best SAAS URL Shortener, QR Generator and Bio Page Creator"
   },
@@ -114,7 +115,7 @@
    "score_reasons": "within $2,000 budget (+25); very cheap: 0.6x annual profit — plausible only for distressed sales, verify revenue hard (+15); revenue-positive: $229 MRR, $2,748/yr profit (+15); revenue claimed but NOT platform-verified (-8)",
    "verified_revenue": 0,
    "sale_method": "classified",
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Email Database: 8M+ verified B2B contacts with unlimited searches, CSV exports, and advanced filters. One-time payment, no subscriptions."
   },
@@ -130,9 +131,25 @@
    "score_reasons": "over budget: $2,100 is 1.1x the $2,000 cap (+24); very cheap: 0.5x annual profit — plausible only for distressed sales, verify revenue hard (+15); revenue-positive: $387 MRR, $4,152/yr profit (+15); revenue claimed but NOT platform-verified (-8)",
    "verified_revenue": 0,
    "sale_method": "classified",
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:09+00:00",
    "tech_stack": null,
    "description": "Peres Exclusive uma marca de roupa autorais e casual. Atua no mercado a 3 meses trazendo bom retorno financeiro e visibilidade."
+  },
+  {
+   "title": "Revenue-generating AI developer SaaS with paying customers and proven demand. Low operating costs, strong margins and significant room to scale.",
+   "url": "https://flippa.com/13467626-revenue-generating-ai-developer-saas-with-paying-customers-and-proven-demand-low-operating-costs-strong-margins-and-significant-room-to-scale",
+   "source": "flippa",
+   "asking_price": 500.0,
+   "mrr": 20.0,
+   "arr": 240.0,
+   "annual_profit": 216.0,
+   "score": 44.0,
+   "score_reasons": "within $2,000 budget (+25); fair value: 2.3x profit (+12); revenue-positive: $20 MRR, $216/yr profit (+15); revenue claimed but NOT platform-verified (-8)",
+   "verified_revenue": 0,
+   "sale_method": "auction",
+   "first_seen": "2026-08-17T13:43:08+00:00",
+   "tech_stack": null,
+   "description": "Revenue-generating AI developer SaaS with paying customers and proven demand. Low operating costs, strong margins and significant room to scale."
   },
   {
    "title": "Launch-ready calculator SaaS in the high-CPC finance niche. 33 tools, full blog, no hosting costs. Source + domain included. Open to Buy Now offers.",
@@ -146,7 +163,7 @@
    "score_reasons": "within $2,000 budget (+25); fair value: 2.5x profit (+12); revenue-positive: $10 MRR, $120/yr profit (+15); revenue claimed but NOT platform-verified (-8)",
    "verified_revenue": 0,
    "sale_method": "classified",
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Launch-ready calculator SaaS in the high-CPC finance niche. 33 tools, full blog, no hosting costs. Source + domain included. Open to Buy Now offers."
   },
@@ -162,7 +179,7 @@
    "score_reasons": "over budget: $2,400 is 1.2x the $2,000 cap (+19); underpriced: 1.7x profit, below the 2.0x line (+18); revenue-positive: $115 MRR, $1,380/yr profit (+15); revenue claimed but NOT platform-verified (-8)",
    "verified_revenue": 0,
    "sale_method": "classified",
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:09+00:00",
    "tech_stack": null,
    "description": "Subscription SaaS for baseball/softball coaches: build and print pitch-call wristbands, lineups, depth charts, and rotation charts."
   },
@@ -178,7 +195,7 @@
    "score_reasons": "within $2,000 budget (+25); underpriced: 1.1x profit vs ~1.7x sub-$100k average (+22); revenue-positive: $165 MRR, $1,428/yr profit (+15); revenue claimed but NOT platform-verified (-8); clone-script/scam language: clone/turnkey language (-12)",
    "verified_revenue": 0,
    "sale_method": "auction",
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "AI SaaS that generates credit dispute letters for all 3 bureaus. Stripe subscriptions + credit packs, automated mailing, full admin panel. Turnkey & growing."
   },
@@ -194,7 +211,7 @@
    "score_reasons": "within $2,000 budget (+25); underpriced: 1.6x profit vs ~1.7x sub-$100k average (+22); revenue-positive: $14 MRR, $144/yr profit (+15); revenue claimed but NOT platform-verified (-8); clone-script/scam language: 'autopilot/passive income' (-12)",
    "verified_revenue": 0,
    "sale_method": "classified",
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Presenting Religion and Spirituality chatbot, showcasing ChatGPT, a Subscription Service, and exceptional design, all with the potential for passive income."
   },
@@ -210,7 +227,7 @@
    "score_reasons": "within $2,000 budget (+25); 19 users but no revenue: monetization upside (+8); tech match (Python/JS) (+9)",
    "verified_revenue": 1,
    "sale_method": "classified",
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:09+00:00",
    "tech_stack": null,
    "description": "codepy.io is an online compiler/Interpreter for Python, Javascript, and Golang. Users can write, run, save and share their codes on the website."
   },
@@ -226,7 +243,7 @@
    "score_reasons": "within $2,000 budget (+25); revenue-positive: $1 MRR (+15)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Premium AI SaaS Chat Agent with multi-model AI, image generation, Automatic SEO blogging, $1,500+ GoDaddy-valued domain & 1K/mo Pinterest account."
   },
@@ -242,7 +259,7 @@
    "score_reasons": "within $2,000 budget (+25); revenue-positive: $1 MRR, $-12/yr profit (+15)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Daily Snail – Gamified Habit Tracker That Turns Daily Habits Into Real Savings"
   },
@@ -258,7 +275,7 @@
    "score_reasons": "within $2,000 budget (+25); revenue-positive: $102 MRR, $-4,260/yr profit (+15)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Saas ciblant les musiciens qui veulent élargir leur fan base, Beatclip transforme leur musiques en vidéos virales prêtes à toucher de nouveaux fans."
   },
@@ -274,7 +291,7 @@
    "score_reasons": "within $2,000 budget (+25); price $1 looks like an auction starting bid; profit multiple not meaningful (+0); revenue-positive: $25 MRR, $300/yr profit (+15)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Viral Faceless AI UGC video generation platform with realistic avatars, voice AI, templates, and exports for Youtube, TikTok, Reels, and ads."
   },
@@ -290,9 +307,41 @@
    "score_reasons": "within $2,000 budget (+25); revenue-positive: $5 MRR, $-72/yr profit (+15)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:09+00:00",
    "tech_stack": null,
    "description": "Fastloanr.com - A newly built AI integrated interface to allow users to search for loan offers by offering many tools to search for the best rates ."
+  },
+  {
+   "title": "Nearly 4 year old website that solves invoicing for freelancers in the Czech Republic.",
+   "url": "https://flippa.com/12889818-nearly-4-year-old-website-that-solves-invoicing-for-freelancers-in-the-czech-republic",
+   "source": "flippa",
+   "asking_price": 1500.0,
+   "mrr": 46.0,
+   "arr": 552.0,
+   "annual_profit": -96.0,
+   "score": 40.0,
+   "score_reasons": "within $2,000 budget (+25); revenue-positive: $46 MRR, $-96/yr profit (+15)",
+   "verified_revenue": null,
+   "sale_method": null,
+   "first_seen": "2026-08-17T13:43:09+00:00",
+   "tech_stack": null,
+   "description": "Nearly 4 year old website that solves invoicing for freelancers in the Czech Republic."
+  },
+  {
+   "title": "Survival iOS App",
+   "url": "https://www.microns.io/startup-listings/survival-ios-app",
+   "source": "microns",
+   "asking_price": 1500.0,
+   "mrr": 12.5,
+   "arr": 150.0,
+   "annual_profit": null,
+   "score": 40.0,
+   "score_reasons": "within $2,000 budget (+25); revenue-positive: $12 MRR (+15)",
+   "verified_revenue": null,
+   "sale_method": null,
+   "first_seen": "2026-08-17T13:43:17+00:00",
+   "tech_stack": null,
+   "description": "iPhone app providing a specialized local AI assistant for survival, first aid, water sourcing, shelter, and fire guidance without requiring an internet connection"
   },
   {
    "title": "RoCode.ai — AI coding agent for Roblox Studio (plugin + SaaS). Stripe subs, custom stack (Vercel/Supabase). Niche creator tool with active MRR.",
@@ -306,7 +355,7 @@
    "score_reasons": "over budget: $3,000 is 1.5x the $2,000 cap (+10); underpriced: 1.1x profit vs ~1.7x sub-$100k average (+22); revenue-positive: $356 MRR, $2,784/yr profit (+15); revenue claimed but NOT platform-verified (-8)",
    "verified_revenue": 0,
    "sale_method": "auction",
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "RoCode.ai — AI coding agent for Roblox Studio (plugin + SaaS). Stripe subs, custom stack (Vercel/Supabase). Niche creator tool with active MRR."
   },
@@ -322,7 +371,7 @@
    "score_reasons": "over budget: $2,999 is 1.5x the $2,000 cap (+10); underpriced: 1.5x profit vs ~1.7x sub-$100k average (+22); revenue-positive: $171 MRR, $2,016/yr profit (+15); revenue claimed but NOT platform-verified (-8)",
    "verified_revenue": 0,
    "sale_method": "classified",
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "98% Margin SaaS | B2B Video Pitch Platform — Zero Link Friction, Live Calendar Bookings, Global Checkout & Self-Funding Viral Growth Loop ( Well Documented )"
   },
@@ -330,7 +379,7 @@
    "title": "High-Performance Social Media Utility SaaS Built with Next.js – SEO Optimized & Monetization Ready",
    "url": "https://flippa.com/13403323-high-performance-social-media-utility-saas-built-with-next-js-seo-optimized-monetization-ready",
    "source": "flippa",
-   "asking_price": 600.0,
+   "asking_price": 510.0,
    "mrr": 0.0,
    "arr": 0.0,
    "annual_profit": -12.0,
@@ -338,7 +387,7 @@
    "score_reasons": "within $2,000 budget (+25); 782 users but no revenue: monetization upside (+8); tech match (JS) (+6)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "High-Performance Social Media Utility SaaS Built with Next.js – SEO Optimized & Monetization Ready"
   },
@@ -354,7 +403,7 @@
    "score_reasons": "within $2,000 budget (+25); 62 users but no revenue: monetization upside (+8); tech match (JS) (+6)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:09+00:00",
    "tech_stack": null,
    "description": "Starter U.S. child care assistance guide built with Next.js, Supabase and Vercel, with early GA4 traffic and monetization potential."
   },
@@ -370,7 +419,7 @@
    "score_reasons": "within $2,000 budget (+25); priced in 2.5-4.0x resale range: 2.5x (+6); revenue-positive: $24 MRR, $276/yr profit (+15); revenue claimed but NOT platform-verified (-8)",
    "verified_revenue": 0,
    "sale_method": "auction",
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Browser-based ethical-hacking academy: 85+ courses, hacking labs & its own cert. Profitable at near-zero cost, 100% organic signups."
   },
@@ -386,7 +435,7 @@
    "score_reasons": "within $2,000 budget (+25); priced in 2.5-4.0x resale range: 3.2x (+6); revenue-positive: $131 MRR, $492/yr profit (+15); revenue claimed but NOT platform-verified (-8)",
    "verified_revenue": 0,
    "sale_method": "classified",
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "A 4-year old profitable web hosting business providing hosting services to customers via a hosting reseller account - loyal customers - monthly recurring income"
   },
@@ -402,7 +451,7 @@
    "score_reasons": "within $2,000 budget (+25); priced in 2.5-4.0x resale range: 2.7x (+6); revenue-positive: $11 MRR, $132/yr profit (+15); revenue claimed but NOT platform-verified (-8)",
    "verified_revenue": 0,
    "sale_method": "classified",
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Authority Calculator Website | 15,000+ Ranking Keywords | 300+ Indexed Pages | Passive Digital Asset | Ready to Scale"
   },
@@ -418,7 +467,7 @@
    "score_reasons": "within $2,000 budget (+25); revenue-positive: $90 MRR, $-2,520/yr profit (+15); tech match (JS) (+6); revenue claimed but NOT platform-verified (-8)",
    "verified_revenue": 0,
    "sale_method": "classified",
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:09+00:00",
    "tech_stack": null,
    "description": "AI skincare planning app. React/Firebase + Claude API. Live payments (Kaspi/TipTop).15 real transactions. Domain + code + brand included.Localization: RU/EN"
   },
@@ -434,7 +483,7 @@
    "score_reasons": "over budget: $2,800 is 1.4x the $2,000 cap (+13); underpriced: 1.9x profit, below the 2.0x line (+18); revenue-positive: $130 MRR, $1,476/yr profit (+15); revenue claimed but NOT platform-verified (-8)",
    "verified_revenue": 0,
    "sale_method": "classified",
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:09+00:00",
    "tech_stack": null,
    "description": "Quora like website to share thoughts and knowledge. We have various websites running and many top level domains, needs Funding, to provide fund for our websites mkravi@gmx.com, lansamworld@gmail.com"
   },
@@ -450,7 +499,7 @@
    "score_reasons": "over budget: $2,999 is 1.5x the $2,000 cap (+10); fair value: 2.1x profit (+12); revenue-positive: $120 MRR, $1,404/yr profit (+15)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "98% Margin SaaS | B2B Lead Magnet Engine — Zero Lead Leakage, Instant Funnel Redirects, Global Checkout & Self-Funding Viral Growth Loop ( Well Documented )"
   },
@@ -466,7 +515,7 @@
    "score_reasons": "within $2,000 budget (+25); expensive: 11.8x profit, above resale range (-5); revenue-positive: $9 MRR, $96/yr profit (+15); tech match (Python/JS) (+9); revenue claimed but NOT platform-verified (-8)",
    "verified_revenue": 0,
    "sale_method": "classified",
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Live AI resume builder SaaS. Next.js + FastAPI + PostgreSQL + Stripe. Custom domain. Google OAuth. Free & Pro plans. Ready to monetize day one."
   },
@@ -482,7 +531,7 @@
    "score_reasons": "within $2,000 budget (+25); expensive: 4.2x profit, above resale range (-5); revenue-positive: $10 MRR, $120/yr profit (+15)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Batch image resizer, compressor and converter that runs entirely in-browser. 45 indexed pages, 18k words of original content, $0 infrastructure cost."
   },
@@ -490,15 +539,15 @@
    "title": "AI virtual staging & interior design SaaS for realtors and homeowners with multi-room rendering, staging, AI redesign & Stripe billing.",
    "url": "https://flippa.com/13630804-ai-virtual-staging-interior-design-saas-for-realtors-and-homeowners-with-multi-room-rendering-staging-ai-redesign-stripe-billing",
    "source": "flippa",
-   "asking_price": 850.0,
+   "asking_price": 1000.0,
    "mrr": 3.0,
    "arr": 36.0,
    "annual_profit": 24.0,
    "score": 35.0,
-   "score_reasons": "within $2,000 budget (+25); expensive: 35.4x profit, above resale range (-5); revenue-positive: $3 MRR, $24/yr profit (+15)",
+   "score_reasons": "within $2,000 budget (+25); expensive: 41.7x profit, above resale range (-5); revenue-positive: $3 MRR, $24/yr profit (+15)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "AI virtual staging & interior design SaaS for realtors and homeowners with multi-room rendering, staging, AI redesign & Stripe billing."
   },
@@ -514,7 +563,7 @@
    "score_reasons": "within $2,000 budget (+25); expensive: 31.2x profit, above resale range (-5); revenue-positive: $1 MRR, $12/yr profit (+15)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "This is a Private Listing- Sharp1"
   },
@@ -530,7 +579,7 @@
    "score_reasons": "within $2,000 budget (+25); expensive: 166.7x profit, above resale range (-5); revenue-positive: $1 MRR, $12/yr profit (+15)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "This is a private listing (Lessways)"
   },
@@ -546,7 +595,7 @@
    "score_reasons": "within $2,000 budget (+25); expensive: 10.4x profit, above resale range (-5); revenue-positive: $4 MRR, $48/yr profit (+15)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "A 2-year-old website that provides an SEO-ready PDF resource website with strong expansion potential in the document tools niche."
   },
@@ -554,33 +603,17 @@
    "title": "A platform offering efficient transcription services, leveraging AI for accurate and fast processing of audio files into text.",
    "url": "https://flippa.com/13445892-a-platform-offering-efficient-transcription-services-leveraging-ai-for-accurate-and-fast-processing-of-audio-files-into-text",
    "source": "flippa",
-   "asking_price": 149.0,
+   "asking_price": 112.0,
    "mrr": 1.0,
    "arr": 12.0,
    "annual_profit": 12.0,
    "score": 35.0,
-   "score_reasons": "within $2,000 budget (+25); expensive: 12.4x profit, above resale range (-5); revenue-positive: $1 MRR, $12/yr profit (+15)",
+   "score_reasons": "within $2,000 budget (+25); expensive: 9.3x profit, above resale range (-5); revenue-positive: $1 MRR, $12/yr profit (+15)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "A platform offering efficient transcription services, leveraging AI for accurate and fast processing of audio files into text."
-  },
-  {
-   "title": "freelance services marketplace built to connect buyers and sellers of digital and local services",
-   "url": "https://flippa.com/13056609-freelance-services-marketplace-built-to-connect-buyers-and-sellers-of-digital-and-local-services",
-   "source": "flippa",
-   "asking_price": 550.0,
-   "mrr": 8.0,
-   "arr": 96.0,
-   "annual_profit": 96.0,
-   "score": 35.0,
-   "score_reasons": "within $2,000 budget (+25); expensive: 5.7x profit, above resale range (-5); revenue-positive: $8 MRR, $96/yr profit (+15)",
-   "verified_revenue": null,
-   "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
-   "tech_stack": null,
-   "description": "freelance services marketplace built to connect buyers and sellers of digital and local services"
   },
   {
    "title": "Profitable IPTV Site | 8,600 Annual Clicks | 2,651 Subscribers | 7 Languages | GitHub Listed | 80% Profit Margin",
@@ -594,7 +627,7 @@
    "score_reasons": "within $2,000 budget (+25); expensive: 7.3x profit, above resale range (-5); revenue-positive: $31 MRR, $252/yr profit (+15)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:09+00:00",
    "tech_stack": null,
    "description": "Profitable IPTV Site | 8,600 Annual Clicks | 2,651 Subscribers | 7 Languages | GitHub Listed | 80% Profit Margin"
   },
@@ -610,7 +643,7 @@
    "score_reasons": "within $2,000 budget (+25); very cheap: 0.5x annual profit — plausible only for distressed sales, verify revenue hard (+15); revenue-positive: $383 MRR, $3,720/yr profit (+15); crypto/gambling niche (-20)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:09+00:00",
    "tech_stack": null,
    "description": "UMBT NORTH is a prop trading firm for sale with active customers, trader programs, and scalable growth potential."
   },
@@ -626,7 +659,7 @@
    "score_reasons": "within $2,000 budget (+25); expensive: 41.7x profit, above resale range (-5); revenue-positive: $6 MRR, $24/yr profit (+15)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:09+00:00",
    "tech_stack": null,
    "description": "3 Year Old Web SaaS Tools: Image Compressor, AI Text Generator & Multiple Video Downloader with Google AdSense Approved"
   },
@@ -642,7 +675,7 @@
    "score_reasons": "within $2,000 budget (+25); tech match (JS/TS) (+9)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:09+00:00",
    "tech_stack": null,
    "description": "Production-ready civic engagement platform — 15K lines TypeScript, 23 pages, 35 APIs, 10 languages, live demo. Next.js + Supabase. Zero-revenue code sale."
   },
@@ -658,7 +691,7 @@
    "score_reasons": "within $2,000 budget (+25); 52 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Platform to connect Real Estate agents and clients, Android app included. Start promoting and generate profit. Easy to scale and run, custom and creative SaaS."
   },
@@ -674,7 +707,7 @@
    "score_reasons": "within $2,000 budget (+25); 15 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "The fastest way for local businesses and agencies to audit, fix and grow their Google Business Profile presence."
   },
@@ -690,7 +723,7 @@
    "score_reasons": "within $2,000 budget (+25); 690 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "AI-powered Clash Royale deck builder for a game with ~8M monthly players. Personalized decks based on playstyle, win conditions, and card preferences."
   },
@@ -706,7 +739,7 @@
    "score_reasons": "within $2,000 budget (+25); 574 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Reusable AI Content Pipeline for Exam & Quiz Prep — Generate Any Vertical On Demand - Generate and Monetize quizzes/certification/exam-prep and YT/Insta videos"
   },
@@ -722,7 +755,7 @@
    "score_reasons": "within $2,000 budget (+25); 676 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "3,200+ Articles, 795 Professions, BLS-Data Career Calculator. Zero Hosting Cost. Pre-Revenue Content and Tool Asset for Sale"
   },
@@ -738,7 +771,7 @@
    "score_reasons": "within $2,000 budget (+25); 1,000 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "A production-ready escrow SaaS for freelancers: clients pay upfront, funds are held safely, and released the moment the work is approved. d."
   },
@@ -754,7 +787,7 @@
    "score_reasons": "within $2,000 budget (+25); 359 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "3 tools for sale with proven organic traffic. One gets 1,500+ visitors/month, another 1,000+ visitors/month | no ads, ready to scale."
   },
@@ -770,7 +803,7 @@
    "score_reasons": "within $2,000 budget (+25); 84 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "A production-ready, professionally designed SaaS platform with a searchable library of 14,470 AI image & video prompt recipes."
   },
@@ -786,7 +819,7 @@
    "score_reasons": "within $2,000 budget (+25); 36 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "PageVibe personalizes your existing landing pages for every visitor persona. AI swaps text and images automatically to double conversions."
   },
@@ -802,7 +835,7 @@
    "score_reasons": "within $2,000 budget (+25); 1,000 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "For sale is a web-based bill-splitting app that handles the entire flow from receipt to payout. No one overpays and everyone receives credit card points."
   },
@@ -818,7 +851,7 @@
    "score_reasons": "within $2,000 budget (+25); 93 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "AI tool that predicts exam questions from student notes. Working product, potential for viral growth"
   },
@@ -834,7 +867,7 @@
    "score_reasons": "within $2,000 budget (+25); 56 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "AI-Powered YouTube Content SaaS – 6 Tools, Fully Built & Already Getting Traffic. Skip 6+ months of development and launch your own startup today."
   },
@@ -850,7 +883,7 @@
    "score_reasons": "within $2,000 budget (+25); 227 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "TakeThisCoupon.com is a coupon and promo code website offering users easy access to the latest deals from various online stores."
   },
@@ -866,7 +899,7 @@
    "score_reasons": "within $2,000 budget (+25); 92 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Live UK SaaS - bank statement PDFs to HMRC MTD records in minutes. 2.25M legally mandated market. AI-powered, Stripe-ready, 2 domains included."
   },
@@ -882,7 +915,7 @@
    "score_reasons": "within $2,000 budget (+25); 79 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Robotron.app lets you deploy AI-built websites to the internet in one click directly from VS Code or Cursor—free, fast, with zero DevOps."
   },
@@ -898,7 +931,7 @@
    "score_reasons": "within $2,000 budget (+25); 602 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "A 6 months old website which helps in creating social media carousels with the help of AI."
   },
@@ -914,7 +947,7 @@
    "score_reasons": "within $2,000 budget (+25); 69 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Only AI tool that scrapes Whop LIVE before generating. Full blueprints, PDFs, funnels in 10s. Recurring SaaS. No competitors doing this. Ready to scale."
   },
@@ -930,7 +963,7 @@
    "score_reasons": "within $2,000 budget (+25); 81 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Bidcraftr is a proposal to payment SaaS. Sign and collect deposit in one client link. Stripe Connect, 3% platform fee, 4 free SEO tools included."
   },
@@ -946,7 +979,7 @@
    "score_reasons": "within $2,000 budget (+25); 71 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "SaaS platform for traders offering trade journaling, analytics, and risk management tools in one affordable solution."
   },
@@ -962,7 +995,7 @@
    "score_reasons": "within $2,000 budget (+25); 68 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "AI-powered video generation platform for creating viral short-form content (TikTok, Reels). Scalable SaaS with strong demand and monetization potential."
   },
@@ -978,7 +1011,7 @@
    "score_reasons": "within $2,000 budget (+25); 55 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "A ready-to-launch SaaS website builder with drag-and-drop features, responsive design, SEO optimization, perfect for ad landing pages, and more."
   },
@@ -994,7 +1027,7 @@
    "score_reasons": "within $2,000 budget (+25); 55 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:09+00:00",
    "tech_stack": null,
    "description": "CertAlert.pro is an SSL certificate and server health monitoring SaaS. It includes subscription billing, API access, certificate monitoring, server health checks, and multi-channel notifications."
   },
@@ -1010,7 +1043,7 @@
    "score_reasons": "within $2,000 budget (+25); 990 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:09+00:00",
    "tech_stack": null,
    "description": "Browser-based RPG/DnD map editor SaaS with WebGL/WASM editor, user accounts, save/export flow, SEO pages and early user activity."
   },
@@ -1026,7 +1059,7 @@
    "score_reasons": "within $2,000 budget (+25); 1,000 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:09+00:00",
    "tech_stack": null,
    "description": "A 0 year old saas business in the business industry earning $0 per month."
   },
@@ -1042,7 +1075,7 @@
    "score_reasons": "within $2,000 budget (+25); 14 users but no revenue: monetization upside (+8)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:09+00:00",
    "tech_stack": null,
    "description": "ChainPulse analyzes market regimes gives exposure recommendations, survival probability, hazard rates, decision engine directives, and 30+ analytical panels."
   },
@@ -1058,7 +1091,7 @@
    "score_reasons": "within $2,000 budget (+25); tech match (JS) (+6)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Voxorio – AI Content Creation OS | Next.js + Supabase SaaS | AI Writing Agents, Media Editor & Scheduler | Full Codebase + Domain, Pre-Launch"
   },
@@ -1074,7 +1107,7 @@
    "score_reasons": "over budget: $3,000 is 1.5x the $2,000 cap (+10); priced in 2.5-4.0x resale range: 2.6x (+6); revenue-positive: $120 MRR, $1,164/yr profit (+15)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "SaaS for tracking document expirations, deadlines, and reminders with automated email & SMS alerts, recurring notifications, and multi-user support."
   },
@@ -1090,7 +1123,7 @@
    "score_reasons": "within $2,000 budget (+25); tech match (JS) (+6)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "AgriTech SaaS for Kazakhstan. Plant disease diagnosis via AI Vision API. Next.js web platform + Telegram bot. Solo-built, fully deployed, ready to scale."
   },
@@ -1106,7 +1139,7 @@
    "score_reasons": "within $2,000 budget (+25); tech match (JS) (+6)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Niche SaaS for lawn care & landscaping pros. React/Node.js on Zite. Domain, brand, full codebase included. Pre-revenue. Motivated seller — $749."
   },
@@ -1122,7 +1155,7 @@
    "score_reasons": "within $2,000 budget (+25); tech match (JS) (+6)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "VibeAudit — Security Scanner SaaS for AI-Built Apps | Connect GitHub, Get a Security Score + Fix Report in 60s | Next.js 14 + Supabase + Stripe"
   },
@@ -1138,7 +1171,7 @@
    "score_reasons": "within $2,000 budget (+25); tech match (JS) (+6)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:08+00:00",
    "tech_stack": null,
    "description": "Multi-language SaaS workforce management for service businesses: time tracking, payroll, client orders, finance & reports. Next.js/Supabase."
   },
@@ -1154,7 +1187,7 @@
    "score_reasons": "within $2,000 budget (+25); tech match (JS) (+6)",
    "verified_revenue": null,
    "sale_method": null,
-   "first_seen": "2026-08-17T02:14:05+00:00",
+   "first_seen": "2026-08-17T13:43:09+00:00",
    "tech_stack": null,
    "description": "Multi-tenant SaaS for accountancy firms. Leads, engagements, timesheets, invoicing in one place. Node.js + React, fully documented, clean handover."
   }
